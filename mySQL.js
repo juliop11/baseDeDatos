@@ -68,7 +68,7 @@ connection.connect(function(error){
 //     }
 // })
 
-let selecMark = "DELETE mark FROM marks WHERE date < 01/01/2013";
+let selecMark = "DELETE FROM marks WHERE date < '2013/01/01'";
 connection.query(selecMark, function(err, result){
     if(err)
     console.log(err);
