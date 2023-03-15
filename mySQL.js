@@ -68,15 +68,15 @@ connection.connect(function(error){
 //     }
 // })
 
-let selecMark = "DELETE FROM marks WHERE date < '2013/01/01'";
-connection.query(selecMark, function(err, result){
-    if(err)
-    console.log(err);
-    else{
-        console.log("Seleccion realizada");
-        console.log(result);
-    }
-})
+// let selecMark = "DELETE FROM marks WHERE date < '2013/01/01'";
+// connection.query(selecMark, function(err, result){
+//     if(err)
+//     console.log(err);
+//     else{
+//         console.log("Seleccion realizada");
+//         console.log(result);
+//     }
+// })
 
 // let actualizar = "UPDATE marks SET mark = 5 WHERE mark < 5";
 // connection.query(actualizar, function(err, result){
