@@ -1,0 +1,22 @@
+{
+  "name": "basededatos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mySQL.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliop11/baseDeDatos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliop11/baseDeDatos/issues"
+  },
+  "homepage": "https://github.com/juliop11/baseDeDatos#readme",
+  "dependencies": {
+    "mysql2": "^3.2.0"
+  }
+}
