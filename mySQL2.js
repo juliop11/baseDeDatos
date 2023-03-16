@@ -69,15 +69,7 @@ connection.connect(function (error) {
 //     }
 // })
 
-// let tabla = "SELECT * FROM students WHERE añoIngreso = 2023";
-// connection.query(tabla, function (err, result) {
-//     if (err)
-//         console.log(err);
-//     else {
-//         console.log("Seleccion realizada");
-//         console.log(result);
-//     }
-// })
+
 
 // let sql = "SELECT idsubject, COUNT(*)AS profesores FROM subject_teacher GROUP BY idsubject";
 // connection.query(sql, function(err, result){
@@ -109,12 +101,12 @@ connection.connect(function (error) {
 //     }
 // })
 
-let  media = "SELECT AVG(mark) AS NOTA ,idstudents FROM marks WHERE (date BETWEEN '2022-01-01' AND '2022-12-31') GROUP BY idstudents"
-connection.query(media, function(err, result){
-    if(err)
-    console.log(err);
-    else{
-        console.log("Nota media");
-        console.log(result);
-    }
-})
+// let  media = "SELECT AVG(mark) AS NOTA ,idstudents FROM marks WHERE (date BETWEEN '2022-01-01' AND '2022-12-31') GROUP BY idstudents"
+// connection.query(media, function(err, result){
+//     if(err)
+//     console.log(err);
+//     else{
+//         console.log("Nota media");
+//         console.log(result);
+//     }
+// })
