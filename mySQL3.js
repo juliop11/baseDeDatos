@@ -18,7 +18,11 @@ connection.connect(function (error) {
     }
 });
 
-let sql ="SELECT first_name, last_name, title FROM students JOIN grupos ON (students.idgroups=grupos.idgroups)JOIN subject_teacher ON(grupos.idgroups=subject_teacher.idgroups)JOIN subjects ON(subject_teacher.idsubjects=subjects.idsubjects)";
+let sql =`SELECT first_name, last_name, title 
+FROM students JOIN grupos ON (students.idgroups=grupos.idgroups)
+JOIN subject_teacher ON(grupos.idgroups=subject_teacher.idgroups)
+JOIN subjects ON(subject_teacher.idsubjects=subjects.idsubjects)`;
+
 connection.query(sql, function(err, result){
     if(err)
     console.log(err);
